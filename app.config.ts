@@ -40,7 +40,13 @@ const config: ExpoConfig = {
   },
   web: {
     bundler: "metro",
-    output: "static",
+    // "single" = client-side-only SPA output. This app is entirely
+    // client-rendered (Supabase auth session, device dark mode, live
+    // queries), so Expo Router's static server-rendering ("static") has
+    // nothing to gain and actively breaks: modules like the Supabase
+    // client touch `window` at import time, which doesn't exist during
+    // Node-side static rendering.
+    output: "single",
     favicon: "./assets/favicon.png"
   },
   plugins: [
