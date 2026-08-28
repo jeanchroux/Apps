@@ -20,7 +20,7 @@ const ANTHROPIC_API_KEY = Deno.env.get("ANTHROPIC_API_KEY")!;
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
 const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
 
-const CURATION_SYSTEM_PROMPT = `You are the curation engine for Atelier, an editorial cultural-events app.
+const CURATION_SYSTEM_PROMPT = `You are the curation engine for Aria, an editorial cultural-events app.
 Given raw event data (title, description, venue, and any press snippets found via web search),
 return STRICT JSON with this shape and nothing else:
 

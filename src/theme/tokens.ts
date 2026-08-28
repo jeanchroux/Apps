@@ -1,5 +1,5 @@
 /**
- * Design tokens for Atelier.
+ * Design tokens for Aria.
  * Aesthetic reference: Kinfolk / Vogue editorial — deep charcoal, cream,
  * subtle gold/copper accents, generous negative space, hairline borders.
  */

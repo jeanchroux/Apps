@@ -23,7 +23,7 @@ Notifications.setNotificationHandler({
  */
 export async function registerForSmartAlerts(): Promise<string | null> {
   if (!Device.isDevice) {
-    console.warn("[Atelier] Push notifications require a physical device.");
+    console.warn("[Aria] Push notifications require a physical device.");
     return null;
   }
 

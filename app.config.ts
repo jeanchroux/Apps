@@ -2,9 +2,9 @@ import "dotenv/config";
 import type { ExpoConfig } from "expo/config";
 
 const config: ExpoConfig = {
-  name: "Atelier",
-  slug: "atelier-app",
-  scheme: "atelier",
+  name: "Aria",
+  slug: "aria-app",
+  scheme: "aria",
   version: "0.1.0",
   orientation: "default",
   icon: "./assets/icon.png",
@@ -17,21 +17,21 @@ const config: ExpoConfig = {
   },
   assetBundlePatterns: ["**/*"],
   ios: {
-    bundleIdentifier: "com.jeanroux.atelier",
+    bundleIdentifier: "com.jeanroux.aria",
     supportsTablet: true,
     infoPlist: {
       NSCalendarsUsageDescription:
-        "Atelier adds shows you book to your calendar so you never miss curtain.",
+        "Aria adds shows you book to your calendar so you never miss curtain.",
       NSCalendarsFullAccessUsageDescription:
-        "Atelier adds shows you book to your calendar so you never miss curtain.",
+        "Aria adds shows you book to your calendar so you never miss curtain.",
       NSPhotoLibraryAddUsageDescription:
-        "Atelier saves the aesthetic show cards you generate so you can share them.",
+        "Aria saves the aesthetic show cards you generate so you can share them.",
       NSUserTrackingUsageDescription:
         "Used only to personalize event recommendations."
     }
   },
   android: {
-    package: "com.jeanroux.atelier",
+    package: "com.jeanroux.aria",
     adaptiveIcon: {
       foregroundImage: "./assets/adaptive-icon.png",
       backgroundColor: "#1C1B19"
@@ -50,7 +50,7 @@ const config: ExpoConfig = {
       "expo-calendar",
       {
         calendarPermission:
-          "Atelier adds shows you book to your calendar so you never miss curtain."
+          "Aria adds shows you book to your calendar so you never miss curtain."
       }
     ],
     [

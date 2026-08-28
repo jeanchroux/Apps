@@ -1,14 +1,32 @@
 # Architecture
 
-## Naming shortlist
+## Naming
 
-Five names evoking access to culture, inspiration, beauty, and talent:
+**Aria** — chosen name, used as the app name/slug/bundle ID throughout this
+codebase (`app.config.ts`, `package.json`). A solo voice raised above the
+orchestra: warm, musical, and easy to say in any language — fitting for an
+app about seeking out the best individual performances across cities.
 
-1. **Atelier** — a working artist's studio; connotes access to creative process, not just the finished show. (Used as the working name throughout this codebase — rename freely, it's a `slug`/`bundleIdentifier` find-and-replace.)
-2. **Foyer** — the elegant threshold every great venue shares: the room you pass through on the way to something transporting.
-3. **Aria** — a solo voice raised above the orchestra; warm, musical, easy to say in any language.
-4. **Vernissage** — the private preview before a gallery opening; signals insider access and taste.
-5. **Nocturne** — an evening's cultural life, and a musical form in its own right (Chopin, Debussy) — romantic without being precious.
+Other names considered from the original shortlist, kept here for
+reference in case of a future rebrand (a `slug`/`bundleIdentifier`/`scheme`
+find-and-replace, plus the strings listed in "Renaming" below):
+
+- **Atelier** — a working artist's studio; connotes access to creative process, not just the finished show.
+- **Foyer** — the elegant threshold every great venue shares: the room you pass through on the way to something transporting.
+- **Vernissage** — the private preview before a gallery opening; signals insider access and taste.
+- **Nocturne** — an evening's cultural life, and a musical form in its own right (Chopin, Debussy) — romantic without being precious.
+
+### Renaming
+
+If you ever want to rename again, these are the places the name is
+hardcoded: `package.json` (`name`), `app.config.ts` (`name`, `slug`,
+`scheme`, `bundleIdentifier`, `android.package`, and the `NSCalendars*`/
+`NSPhotoLibraryAddUsageDescription` strings), `src/lib/calendar.ts` (the
+local calendar title/name and the `.ics` `PRODID`/`UID` domain),
+`src/lib/supabase.ts` and `src/lib/notifications.ts` (console warning
+prefixes), `src/lib/share.ts` (default share filename), the curation
+system prompt in `supabase/functions/generate-event-summary/index.ts`,
+and the copy in `README.md` / `app/(tabs)/trips.tsx`.
 
 ## Why Expo + Supabase
 

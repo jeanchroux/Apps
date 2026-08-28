@@ -1,10 +1,10 @@
-# Atelier
+# Aria
 
 A cross-platform (Web, iPadOS, iOS) app for discovering, tracking, and sharing
 the best culture — concerts, opera, theater, and galleries — in your home
 city and everywhere you travel.
 
-> Naming shortlist and full feature rationale: see [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
+> Full feature rationale (and how the name was chosen): see [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 > Curation engine (LLM + event API integration) details: see [`docs/CURATION_ENGINE.md`](docs/CURATION_ENGINE.md).
 
 ## Tech stack

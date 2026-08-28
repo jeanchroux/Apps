@@ -24,13 +24,13 @@ async function getDefaultWritableCalendarId(): Promise<string> {
   }
 
   const newCalendarId = await Calendar.createCalendarAsync({
-    title: "Atelier",
+    title: "Aria",
     color: "#B08D57",
     entityType: Calendar.EntityTypes.EVENT,
     sourceId: calendars[0]?.source?.id,
-    source: calendars[0]?.source ?? { isLocalAccount: true, name: "Atelier" },
-    name: "atelier",
-    ownerAccount: "atelier",
+    source: calendars[0]?.source ?? { isLocalAccount: true, name: "Aria" },
+    name: "aria",
+    ownerAccount: "aria",
     accessLevel: Calendar.CalendarAccessLevel.OWNER
   });
   return newCalendarId;
@@ -54,7 +54,7 @@ export async function addTicketToDeviceCalendar(ticket: Ticket): Promise<string>
     location: ticket.venue_name,
     startDate,
     endDate,
-    notes: [ticket.notes, `${ticket.num_tickets} ticket(s) via Atelier`].filter(Boolean).join("\n"),
+    notes: [ticket.notes, `${ticket.num_tickets} ticket(s) via Aria`].filter(Boolean).join("\n"),
     alarms: [{ relativeOffset: -120 }] // 2 hours before
   });
 
@@ -72,9 +72,9 @@ export function buildIcsFile(ticket: Ticket): string {
   return [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Atelier//EN",
+    "PRODID:-//Aria//EN",
     "BEGIN:VEVENT",
-    `UID:${ticket.id}@atelier.app`,
+    `UID:${ticket.id}@aria.app`,
     `DTSTAMP:${toIcsDate(new Date())}`,
     `DTSTART:${toIcsDate(startDate)}`,
     `DTEND:${toIcsDate(endDate)}`,

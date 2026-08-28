@@ -14,7 +14,7 @@ import type { View } from "react-native";
  * integration path. It pre-fills the image; the user taps their own
  * @jeanroux account and posts.
  */
-export async function shareViewAsImage(viewRef: RefObject<View>, filenameHint = "atelier-share") {
+export async function shareViewAsImage(viewRef: RefObject<View>, filenameHint = "aria-share") {
   const uri = await captureRef(viewRef, {
     format: "png",
     quality: 1,

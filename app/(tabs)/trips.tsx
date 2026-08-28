@@ -94,7 +94,7 @@ export default function TripsScreen() {
         )}
         ListEmptyComponent={
           <Text style={[type.body, { color: theme.textSecondary, marginTop: spacing.xl }]}>
-            Add an upcoming trip and Atelier will automatically filter that city&apos;s feed to your exact travel
+            Add an upcoming trip and Aria will automatically filter that city&apos;s feed to your exact travel
             dates.
           </Text>
         }

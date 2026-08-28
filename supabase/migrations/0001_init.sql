@@ -1,5 +1,5 @@
 -- =========================================================================
--- Atelier — initial schema
+-- Aria — initial schema
 -- Cultural discovery, venues, trips, tickets, curation & alerts
 -- =========================================================================
 
